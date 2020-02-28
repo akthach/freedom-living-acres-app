@@ -9,7 +9,7 @@ import static java.lang.String.format;
 public class HelloWorldController {
 
     @GetMapping(value = "/{personName}")
-    public String greet(@PathVariable(value = "name") String name) {
+    public String greet(@PathVariable(value = "personName") String name) {
         return format("Hello %s!", name);
     }
 
